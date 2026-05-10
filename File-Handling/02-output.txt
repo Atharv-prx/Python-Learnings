@@ -1,0 +1,9 @@
+Some theory about file writing in python.
+Also I like watching anime.
+
+with is a keyword used to wrap a block of code.
+The open() function is used to open a file.
+'w' mode writes to a file and overwrites the file if it already exists.
+'a' mode appends to the file, if file doesn't exist, it will be created.
+'x' mode creates a new file and raises an error if it already exists.
+'r' mode reads a file, if file doesn't exist, it will raise an error.
