@@ -20,11 +20,11 @@ x = IntVar()
 y = IntVar()
 
 current_dir = os.path.dirname(__file__)
-image_path_1 = os.path.join(current_dir, "Python-Logo.png")
+image_path_1 = os.path.join(current_dir,"Images", "Python-Logo.png")
 photo_1 = PhotoImage(file=image_path_1)
 
 current_dir = os.path.dirname(__file__)
-image_path_2 = os.path.join(current_dir, "Java-Logo.png")
+image_path_2 = os.path.join(current_dir,"Images", "Java-Logo.png")
 photo_2 = PhotoImage(file=image_path_2)
 
 checkbox_1 = Checkbutton(window, text= 'Python', variable=x, onvalue=1, offvalue=0, command=display)
