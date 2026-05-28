@@ -6,6 +6,13 @@ def submit():
 
 window = Tk()
 
+current_dir = os.path.dirname(__file__)
+image_path_1 = os.path.join(current_dir,"Images", "fire.png")
+fire_image = PhotoImage(file=image_path_1)
+
+fire_label = Label(image=fire_image)
+fire_label.pack()
+
 celsius_scale = Scale(window, 
                       from_=100, 
                       to=0,
@@ -20,6 +27,12 @@ celsius_scale = Scale(window,
                       )
 celsius_scale.set(((celsius_scale['from']-celsius_scale['to'])/2) +celsius_scale['to'])
 celsius_scale.pack()
+
+image_path_2 = os.path.join(current_dir,"Images", "snowflake.png")
+cold_image = PhotoImage(file=image_path_2)
+
+cold_label = Label(image=cold_image)
+cold_label.pack()
 
 button = Button(window, text='submit', command=submit)
 button.pack()
