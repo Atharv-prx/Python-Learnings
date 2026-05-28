@@ -6,7 +6,7 @@ import os
 window = Tk()
 
 current_dir = os.path.dirname(__file__)
-image_path = os.path.join(current_dir, "Legion.png")
+image_path = os.path.join(current_dir,"Images", "Legion.png")
 photo = PhotoImage(file=image_path)
 
 label = Label(window,

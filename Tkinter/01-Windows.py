@@ -12,7 +12,7 @@ window.title("First GUI") # Changes Title
 
 # Replacing feather icon, we need to convert photo into "photo image" cuz that's the format that tkinter understands
 current_dir = os.path.dirname(__file__)
-image_path = os.path.join(current_dir, "Legion.png")
+image_path = os.path.join(current_dir,"Images", "Legion-Logo.png")
 
 icon = PhotoImage(file = image_path)
 

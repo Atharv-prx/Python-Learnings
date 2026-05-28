@@ -11,7 +11,7 @@ def click():
 window = Tk()
 
 current_dir = os.path.dirname(__file__)
-image_path = os.path.join(current_dir, "Legion.png")
+image_path = os.path.join(current_dir,"Images","Images", "Legion-Logo.png")
 photo = PhotoImage(file=image_path)
 
 button = Button(window, text = "Click this!!")
