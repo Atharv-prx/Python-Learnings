@@ -3,23 +3,39 @@
 from tkinter import *
 
 def submit():
+
+    food=[]
+      
+    # This for loop iterates once for each item that we select  
+    for x in list_box.curselection():
+        food.insert(x, list_box.get(x))
+
     print("You have ordered: ")
-    print(list_box.get(list_box.curselection()))
+    
+    for x in food:
+        print(x)
 
 def add():
-    list_box.insert(list_box.size(), entry_box.get())     # list_box.size()--> gives current position of index we are currently on
+
+    # list_box.size()--> gives current position of index we are currently on
+    list_box.insert(list_box.size(), entry_box.get())     
     list_box.config(height=list_box.size())
 
 def delete():
-    list_box.delete(list_box.curselection())
-    list_box.config(height=list_box.size())
     
+    # Used reverse because index changes everytime a item gets deleted
+    for x in reversed(list_box.curselection()): 
+        list_box.delete(x)
+
+    list_box.config(height=list_box.size())
+
 window = Tk()
 
 list_box = Listbox(window,
                    bg='#f7ffDE',
                    font=('Constantia',35),
                    width=12,
+                   selectmode=MULTIPLE, #allows to select multiple items
                    )
 
 list_box.pack()
