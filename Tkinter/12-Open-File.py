@@ -2,10 +2,12 @@ from tkinter import *
 from tkinter import filedialog
 
 def openFile():
-    file_path = filedialog.askopenfilename(initialdir="C:\\Code\\Python\\Python-Learnings\\File-Handling\\02-output.csv")
-    with open(file_path, 'r') as file:
-        content = file.read()
-        print(content)
+    file_path = filedialog.askopenfilename(initialdir="C:\\Code\\Python\\Python-Learnings\\File-Handling",
+                                           title='Opened File alr ?'
+                                           )
+    file = open(file_path, 'r')
+    print(file.read())
+    file.close()
 
 window = Tk()
 
