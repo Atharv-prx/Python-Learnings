@@ -15,5 +15,5 @@ def fun():
 x = fun()
 print(x)
 
-# finnaly is always exected 
-# I we use normally something instead of finnaly then it won't be executed cuz of "return" but finally is always executed
+# finally is always exected 
+# I we use normally something instead of finally then it won't be executed cuz of "return" but finally is always executed
