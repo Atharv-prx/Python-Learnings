@@ -4,14 +4,7 @@
 
 * This Repository reflects my continuous learning process, code quality, structure, and complexity will improve over time.
 * Contains structured Python programs from basic to intermediate level
-* Focused on problem-solving and logical thinking
 * Continuously updated as I progress
-
-## Tools & Technologies
-
-* Language: Python
-* Editor: VS Code
-* Version Control: Git & GitHub
 
 ## Contributions
 
